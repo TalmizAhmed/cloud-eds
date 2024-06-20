@@ -28,5 +28,19 @@ function days(endDate, startDate) {
   return Math.floor(diffInMs / (1000 * 60 * 60 * 24));
 }
 
+/**
+ * Gets server fetched custom Enum Data for radio buttons
+ * returns {Array} - Array of objects containing url and label
+ */
+function customEnumData() {
+  return [{
+    url: "testurl",
+    label: "test label"
+  }, {
+    url: "testurl2",
+    label: "test label"
+  }];
+}
+
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
